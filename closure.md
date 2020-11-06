@@ -54,3 +54,5 @@ cat.printInfo(); //prints Name: window Color: undefined Age: undefined
 Why are color and age undefined in line 2? You might be thinking, “the cat object properties are clearly defined above and are in an outer more global scope aren’t they?” More importantly, where did “window” come from?
 
 JavaScript loses scope of this when used inside of a function that is contained inside of another function. When it is lost, by default, this will be bound to the global window object. In our example, it just so happens that the window object also has a “name” property with a value of “window”.
+
+in order to solve this, we use call(), apply(), bind()
