@@ -219,14 +219,6 @@ function Animal (name, energy) {
 }
 ```
 
-
-
-
-
-
-
-
-
 ## Arrow Functions
 ---
 Arrow functions don’t have their own this keyword. As a result, arrow functions can’t be constructor functions and if you try to invoke an arrow function with the new keyword, it’ll throw an error.
