@@ -43,9 +43,9 @@ To indicate that instead you want a single expression that happens to be an obje
 
 ## Enclosing Scope Context
 ---
-Unlike every other form of function, arrow functions do not have their own execution context.
+Unlike every other form of function, **arrow functions do not have their own execution context**.
 
-Practically, this means that both this and arguments are inherited from their parent function.
+Practically, this means that **both ```this``` and arguments are inherited from their parent function**.
 
 For example, compare the following code with and without arrow functions:
 ```js
@@ -66,10 +66,6 @@ const test = {
   }
 };
 ```
-We have a simple test object with two methods - each a function that creates and returns an anonymous function.
-
-The difference is in the first case it uses a traditional function expression, while in the latter it uses an arrow function.
-
 If we run these in a console with the same arguments however, we get very different results.
 ```js
 > const anon = test.createAnonFunction('hello', 'world');
